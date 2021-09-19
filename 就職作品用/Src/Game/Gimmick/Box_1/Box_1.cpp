@@ -88,3 +88,10 @@ void CBox_1::Fin()
 {
 	MV1DeleteModel(m_iHndl);
 }
+
+void CBox_1::PlayerHit()
+{
+
+
+
+}

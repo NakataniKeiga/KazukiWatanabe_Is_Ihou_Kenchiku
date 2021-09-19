@@ -16,6 +16,7 @@ private:
 	~CCollisionManager() {};
 
 public:
+
 	static VECTOR CollCheckPlayerToStage(CPlayer* player);
 	static VECTOR CollCheckPlayerToItem(CPlayer* player);
 	static VECTOR CollCheckPlayerToGimmick(CPlayer* player);

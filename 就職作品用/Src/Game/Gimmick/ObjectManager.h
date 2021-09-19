@@ -12,13 +12,13 @@ class CObjectManager:public CSingleton<CObjectManager>
 	friend CSingleton;
 private:
 
-	CGimmickManager m_GimmickManager;
-	CItemManager m_ItemManager;
+	CGimmickManager* m_GimmickManager;
+	CItemManager* m_ItemManager;
 
-	
-public:
 	CObjectManager() {};
 	~CObjectManager() {};
+public:
+	
 
 	void Init();//‰Šú‰»
 	void Load();//ƒ[ƒhˆ—

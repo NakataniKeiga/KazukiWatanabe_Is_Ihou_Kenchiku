@@ -54,6 +54,9 @@ private:
 	void HaveMove();
 	//ゴーレム起動
 	void GolemStart(CGolem* golem);
+
+
+
 public:
 
 //コンストラクタ・デストラクタ

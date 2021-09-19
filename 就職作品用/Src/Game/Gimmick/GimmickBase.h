@@ -1,6 +1,7 @@
 #pragma once
 #include"../ObjectBase/Object3DBase.h"
 #include"../Gimmick/GimmickCommon.h"
+#include"../Character/Player/Player.h"
 #include<vector>
 
 class CGimmickBase/*:public CObjectBase*/
@@ -12,6 +13,7 @@ protected:
 	VECTOR m_vScale;//大きさ
 	float m_fRadius;//オブジェクトの半径
 	int m_iHndl;//モデルハンドル
+
 	taggimmick m_kind;
 	int m_iStageType;
 
@@ -28,6 +30,8 @@ public:
 	virtual void Draw() {};
 	//終了処理
 	virtual void Fin() {};
+
+	virtual void PlayerHit(CPlayer* player) {};
 
 	void SetPos(VECTOR pos) { m_vPos = pos; }
 	void SetRot(VECTOR rot) { m_vRot = rot; }

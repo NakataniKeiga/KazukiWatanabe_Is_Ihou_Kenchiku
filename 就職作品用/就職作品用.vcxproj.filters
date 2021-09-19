@@ -292,7 +292,7 @@
       <Filter>Game\Character</Filter>
     </ClCompile>
     <ClCompile Include="Src\Game\Character\CharacterBase.cpp">
-      <Filter>Game\Character\Player</Filter>
+      <Filter>Game\Character</Filter>
     </ClCompile>
   </ItemGroup>
   <ItemGroup>

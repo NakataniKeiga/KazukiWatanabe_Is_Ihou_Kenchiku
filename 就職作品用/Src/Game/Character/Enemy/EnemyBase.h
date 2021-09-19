@@ -5,6 +5,7 @@ class CEenmyBase :public CObjectBase
 {
 protected:
 
+
 	VECTOR m_vGravity;
 	float m_fGravity;
 

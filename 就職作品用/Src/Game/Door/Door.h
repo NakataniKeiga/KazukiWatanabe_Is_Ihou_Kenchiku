@@ -28,6 +28,8 @@ public:
 	void Draw();
 	//終了処理
 	void Fin();
+
+	void PlayerHit();
 	//扉が開く判定取得
 	void GetOpen(bool flg) { m_isOpen = flg; }
 	//扉が開く判定セット

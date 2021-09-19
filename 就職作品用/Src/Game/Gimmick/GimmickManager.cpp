@@ -72,11 +72,13 @@ void CGimmickManager::Update()
 //•`‰æˆ—
 void CGimmickManager::Draw()
 {
-	for (auto& gimmick : m_UseGimmick)
+	if (m_UseGimmick.size() != 0)
 	{
-		gimmick->Draw();
+		for (auto& gimmick : m_UseGimmick)
+		{
+			gimmick->Draw();
+		}
 	}
-	
 }
 //I—¹ˆ—
 void CGimmickManager::Fin()

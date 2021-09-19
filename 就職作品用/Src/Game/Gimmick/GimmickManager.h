@@ -21,10 +21,11 @@ private:
 
 	int m_Handle[GIMMICK_NUM];
 
-
-public:
 	CGimmickManager() {};
 	~CGimmickManager() {};
+
+public:
+	
 	//‰Šú‰»
 	void Init();
 	//ƒ[ƒhˆ—

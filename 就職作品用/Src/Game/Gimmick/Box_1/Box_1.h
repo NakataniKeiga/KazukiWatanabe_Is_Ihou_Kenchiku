@@ -34,6 +34,8 @@ public:
 	//後処理
 	void Fin();
 
+	void PlayerHit();
+
 	void SetGravity(VECTOR garavity) { m_vGravity = garavity; }
 	void Setgravity(float gravity) { m_fGravity = gravity; }//重力セット
 

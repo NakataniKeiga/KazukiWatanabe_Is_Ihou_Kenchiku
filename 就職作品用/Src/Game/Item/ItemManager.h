@@ -16,11 +16,11 @@ private:
 
 	int m_Handle[ITEM_NUM];
 
-
+CItemManager() {};
+	~CItemManager() {};
 
 public:
-	CItemManager() {};
-	~CItemManager() {};
+	
 
 
 	//‰Šú‰»

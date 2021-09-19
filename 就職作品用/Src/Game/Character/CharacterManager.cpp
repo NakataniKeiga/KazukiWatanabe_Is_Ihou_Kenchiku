@@ -55,7 +55,7 @@ void CCharacterManager::Fin()
 	m_Camera->Fin();
 }
 
-bool CCharacterManager::PlayerGetFlg()
-{
-	
-}
+//bool CCharacterManager::PlayerGetFlg()
+//{
+//	
+//}

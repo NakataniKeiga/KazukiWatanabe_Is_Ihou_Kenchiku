@@ -5,6 +5,7 @@
 #include"../Gimmick/GimmickManager.h"
 #include"../Gimmick/Box_1/Box_1.h"
 #include"../Field/StageManager.h"
+#include<list>
 
 
 VECTOR CCollisionManager::CollCheckPlayerToStage(CPlayer* player)
@@ -125,7 +126,7 @@ VECTOR CCollisionManager::CollCheckPlayerToGimmick(CPlayer* player)
 
 	
 
-	for (auto gimmick : gimmick_pool)
+	for (auto& gimmick : gimmick_pool)
 	{
 	
 		int GimmickHandle = gimmick->GetHandle();
