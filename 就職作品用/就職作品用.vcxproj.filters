@@ -1,0 +1,483 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <Filter Include="ソース ファイル">
+      <UniqueIdentifier>{4FC737F1-C7A5-4376-A066-2A32D752A2FF}</UniqueIdentifier>
+      <Extensions>cpp;c;cc;cxx;def;odl;idl;hpj;bat;asm;asmx</Extensions>
+    </Filter>
+    <Filter Include="ヘッダー ファイル">
+      <UniqueIdentifier>{93995380-89BD-4b04-88EB-625FBE52EBFB}</UniqueIdentifier>
+      <Extensions>h;hh;hpp;hxx;hm;inl;inc;ipp;xsd</Extensions>
+    </Filter>
+    <Filter Include="リソース ファイル">
+      <UniqueIdentifier>{67DA6AB6-F800-4c08-8B7A-83BB121AAD01}</UniqueIdentifier>
+      <Extensions>rc;ico;cur;bmp;dlg;rc2;rct;bin;rgs;gif;jpg;jpeg;jpe;resx;tiff;tif;png;wav;mfcribbon-ms</Extensions>
+    </Filter>
+    <Filter Include="Game">
+      <UniqueIdentifier>{c1d20016-dad1-4da5-a9a7-128d4d788b61}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Lib">
+      <UniqueIdentifier>{42d76961-7a79-4534-8d38-84f012b3d87d}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Game\Character">
+      <UniqueIdentifier>{47b4a59e-3861-449c-b893-16dda7abf4d5}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Game\Character\Player">
+      <UniqueIdentifier>{3fa41005-1fff-455b-8a7e-e2e6efb233fa}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Game\Camera">
+      <UniqueIdentifier>{a559c948-4896-47ef-8f2e-3e85fb981ff1}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Game\Scene">
+      <UniqueIdentifier>{802bcab8-6d1c-43eb-b594-2c3cce91dd5e}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Game\Input">
+      <UniqueIdentifier>{f36686a2-015b-42cb-a52f-1e978822b344}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Game\Collision">
+      <UniqueIdentifier>{dab09103-e2e4-4f8d-8313-123e9416377d}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Game\Scene\ScenePlay">
+      <UniqueIdentifier>{4cfd77f2-109a-4bd4-96e4-98af1c318a26}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Game\Scene\SceneTitle">
+      <UniqueIdentifier>{e6e4c842-2d61-4138-ba92-3ec01e688be0}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Game\Character\Enemy">
+      <UniqueIdentifier>{58924ef2-0e7f-4250-9c61-c8686eedabd4}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Game\Stage">
+      <UniqueIdentifier>{4b374017-dbe1-4d58-93c3-6fa520ba7de6}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Game\Object">
+      <UniqueIdentifier>{a6a2940d-ee7b-4ddc-8afe-6ab56c42de80}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Game\Scene\SceneClear">
+      <UniqueIdentifier>{f1cb156c-12fc-4941-af85-322f9a4ac516}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Lib\DrawText">
+      <UniqueIdentifier>{2d535661-d24f-452f-b717-4da3c81d8628}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Game\Object\Item">
+      <UniqueIdentifier>{79540ee8-1433-4440-b1f0-fa0f726dd799}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Game\Object\Item\Key">
+      <UniqueIdentifier>{92467e9c-567a-4682-ac44-38659b5e5a58}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Game\Object\Exit">
+      <UniqueIdentifier>{65818780-e491-4702-89e2-8413f68f47ab}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Game\Stage\Field_1">
+      <UniqueIdentifier>{cea56a3c-e061-4a17-8200-a08f7cc518b5}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Game\Stage\Field_2">
+      <UniqueIdentifier>{cd2bad39-9d1f-4c89-8ed7-aa5ce448565e}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Lib\math">
+      <UniqueIdentifier>{fab640ef-283c-42cd-a0dc-4bf4ff4363de}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Lib\math\Hit">
+      <UniqueIdentifier>{4f45b737-fa7c-47b6-92eb-acdff96420b2}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Game\UI">
+      <UniqueIdentifier>{a4a8f188-e0bc-47c5-a58d-9f432f451497}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Game\Character\Golem">
+      <UniqueIdentifier>{08903bd8-5696-4689-b230-3c38e573958d}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Game\Camera\PlayerCamera">
+      <UniqueIdentifier>{1e2f3881-d6a1-48a0-9986-2c0c93451938}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Game\Camera\GolemCamera">
+      <UniqueIdentifier>{2f437d59-a362-427f-a704-639a755c18c1}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Game\UI\StageUI">
+      <UniqueIdentifier>{4912da90-da93-4491-baa7-af1e39ea2587}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Game\Scene\SceneGameOver">
+      <UniqueIdentifier>{fc370b4b-f81a-4164-ab05-ddb5a814699d}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Game\Menu">
+      <UniqueIdentifier>{58f06bd6-77dd-473e-9c1e-c0c497f52b8d}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Game\Object\Gimmick">
+      <UniqueIdentifier>{d2022596-8bb7-4234-bb88-52711b3c360a}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Game\Object\Gimmick\Needle">
+      <UniqueIdentifier>{68eeca3c-aedf-454a-b94b-8f0f327e4b4d}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Game\Object\Gimmick\Lift_1">
+      <UniqueIdentifier>{84588bed-a735-4647-8353-2555da636e3e}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Game\Object\Gimmick\Lift_1\Lift_Lever">
+      <UniqueIdentifier>{14fd6a24-8c87-4df0-99e5-72f4b6ae7647}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Game\Object\Gimmick\Lift_1\Lift_1">
+      <UniqueIdentifier>{44b6d439-16ff-4d04-b77f-4e6eae4e09cd}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Game\Object\Gimmick\Lift_2">
+      <UniqueIdentifier>{b4b40512-0457-4424-9d25-56f13425f5f6}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Game\Object\Gimmick\Lift_2\Lift_Switch">
+      <UniqueIdentifier>{60459994-1274-4f0c-b8b1-2456086e8914}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Game\Object\Gimmick\Lift_2\Lift_2">
+      <UniqueIdentifier>{93bff882-bcdb-435c-a993-2d376355e439}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Game\Object\Gimmick\Box_1">
+      <UniqueIdentifier>{23e2a025-197c-4ee4-90ea-14e9cfb3cfec}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Game\Object\Gimmick\Door">
+      <UniqueIdentifier>{2709279d-f28d-4420-929b-f6050e069e9d}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Game\Object\Item\Zenmai">
+      <UniqueIdentifier>{7e7caa84-244d-4f8c-83cf-fbb9cf4c031d}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Game\UI\GameUI">
+      <UniqueIdentifier>{baf6e842-9e3c-42c7-ae22-5dd948681976}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Game\Anime">
+      <UniqueIdentifier>{373dabd0-505b-413d-aa1b-6f5ce3a701fb}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="Src\Game\Character\Player\Player.cpp">
+      <Filter>Game\Character\Player</Filter>
+    </ClCompile>
+    <ClCompile Include="Src\Game\Camera\CameraDebug.cpp">
+      <Filter>Game\Camera</Filter>
+    </ClCompile>
+    <ClCompile Include="Src\Game\Scene\SceneManager.cpp">
+      <Filter>Game\Scene</Filter>
+    </ClCompile>
+    <ClCompile Include="Src\main.cpp">
+      <Filter>Lib</Filter>
+    </ClCompile>
+    <ClCompile Include="Src\Game\Input\Input.cpp">
+      <Filter>Game\Input</Filter>
+    </ClCompile>
+    <ClCompile Include="Src\Game\Scene\ScenePlay\ScenePlay.cpp">
+      <Filter>Game\Scene\ScenePlay</Filter>
+    </ClCompile>
+    <ClCompile Include="Src\Lib\Frame.cpp">
+      <Filter>Lib</Filter>
+    </ClCompile>
+    <ClCompile Include="Src\Game\Camera\CamaraManager.cpp">
+      <Filter>Game\Camera</Filter>
+    </ClCompile>
+    <ClCompile Include="Src\Game\Scene\SceneTitle\SceneTitle.cpp">
+      <Filter>Game\Scene\SceneTitle</Filter>
+    </ClCompile>
+    <ClCompile Include="Src\Game\Field\StageManager.cpp">
+      <Filter>Game\Stage</Filter>
+    </ClCompile>
+    <ClCompile Include="Src\Game\Exit\Exit.cpp">
+      <Filter>Game\Object\Exit</Filter>
+    </ClCompile>
+    <ClCompile Include="Src\Game\Gimmick\ObjectManager.cpp">
+      <Filter>Game\Object</Filter>
+    </ClCompile>
+    <ClCompile Include="Src\Game\Gimmick\Needle\Needle.cpp">
+      <Filter>Game\Object\Gimmick\Needle</Filter>
+    </ClCompile>
+    <ClCompile Include="Src\Game\Gimmick\Needle\NeedleManager.cpp">
+      <Filter>Game\Object\Gimmick\Needle</Filter>
+    </ClCompile>
+    <ClCompile Include="Src\Game\Scene\SceneClear\SceneClear.cpp">
+      <Filter>Game\Scene\SceneClear</Filter>
+    </ClCompile>
+    <ClCompile Include="Src\Lib\DrawText\DrawText.cpp">
+      <Filter>Lib\DrawText</Filter>
+    </ClCompile>
+    <ClCompile Include="Src\Game\Exit\ExitManager.cpp">
+      <Filter>Game\Object\Exit</Filter>
+    </ClCompile>
+    <ClCompile Include="Src\Game\Gimmick\Lift_2\Lift_switch\Lift_switch.cpp">
+      <Filter>Game\Object\Gimmick\Lift_2\Lift_Switch</Filter>
+    </ClCompile>
+    <ClCompile Include="Src\Game\Gimmick\Lift_2\Lift_2\Lift_2.cpp">
+      <Filter>Game\Object\Gimmick\Lift_2\Lift_2</Filter>
+    </ClCompile>
+    <ClCompile Include="Src\Game\Gimmick\Lift_2\Lift_2Manager.cpp">
+      <Filter>Game\Object\Gimmick\Lift_2</Filter>
+    </ClCompile>
+    <ClCompile Include="Src\Game\Gimmick\Lift_1\Lift_1\Lift_1.cpp">
+      <Filter>Game\Object\Gimmick\Lift_1\Lift_1</Filter>
+    </ClCompile>
+    <ClCompile Include="Src\Game\Gimmick\Lift_1\Lift_Lever\Lever.cpp">
+      <Filter>Game\Object\Gimmick\Lift_1\Lift_Lever</Filter>
+    </ClCompile>
+    <ClCompile Include="Src\Game\Gimmick\Lift_1\Lift_1Manager.cpp">
+      <Filter>Game\Object\Gimmick\Lift_1</Filter>
+    </ClCompile>
+    <ClCompile Include="Src\Game\Gimmick\Box_1\Box_1.cpp">
+      <Filter>Game\Object\Gimmick\Box_1</Filter>
+    </ClCompile>
+    <ClCompile Include="Src\Game\Gimmick\Box_1\Box_1Mamager.cpp">
+      <Filter>Game\Object\Gimmick\Box_1</Filter>
+    </ClCompile>
+    <ClCompile Include="Src\Game\Item\Key\Key.cpp">
+      <Filter>Game\Object\Item\Key</Filter>
+    </ClCompile>
+    <ClCompile Include="Src\Game\Field\Field_1\Field_1.cpp">
+      <Filter>Game\Stage\Field_1</Filter>
+    </ClCompile>
+    <ClCompile Include="Src\Game\Field\Field_2\Field_2.cpp">
+      <Filter>Game\Stage\Field_2</Filter>
+    </ClCompile>
+    <ClCompile Include="Src\Game\Field\StageBase.cpp">
+      <Filter>Game\Stage</Filter>
+    </ClCompile>
+    <ClCompile Include="Src\Lib\math\Hit\Hit.cpp">
+      <Filter>Lib\math\Hit</Filter>
+    </ClCompile>
+    <ClCompile Include="Src\Game\Collision\CollisionManager.cpp">
+      <Filter>Game\Collision</Filter>
+    </ClCompile>
+    <ClCompile Include="Src\Game\UI\UIManager.cpp">
+      <Filter>Game\UI</Filter>
+    </ClCompile>
+    <ClCompile Include="Src\Game\Door\Door.cpp">
+      <Filter>Game\Object\Gimmick\Door</Filter>
+    </ClCompile>
+    <ClCompile Include="Src\Game\Door\DoorManager.cpp">
+      <Filter>Game\Object\Gimmick\Door</Filter>
+    </ClCompile>
+    <ClCompile Include="Src\Game\Character\Golem\Golem.cpp">
+      <Filter>Game\Character\Golem</Filter>
+    </ClCompile>
+    <ClCompile Include="Src\Lib\math\MyMath.cpp">
+      <Filter>Lib\math</Filter>
+    </ClCompile>
+    <ClCompile Include="Src\Game\Character\Enemy\Enemy.cpp">
+      <Filter>Game\Character\Enemy</Filter>
+    </ClCompile>
+    <ClCompile Include="Src\Game\Character\Enemy\EnemyManager.cpp">
+      <Filter>Game\Character\Enemy</Filter>
+    </ClCompile>
+    <ClCompile Include="Src\Game\Camera\CameraPlayer.cpp">
+      <Filter>Game\Camera\PlayerCamera</Filter>
+    </ClCompile>
+    <ClCompile Include="Src\Game\Camera\CameraGolem.cpp">
+      <Filter>Game\Camera\GolemCamera</Filter>
+    </ClCompile>
+    <ClCompile Include="Src\Game\UI\MapUI\MapUI.cpp">
+      <Filter>Game\UI\StageUI</Filter>
+    </ClCompile>
+    <ClCompile Include="Src\Game\Scene\SceneGameOver\SceneGameOver.cpp">
+      <Filter>Game\Scene\SceneGameOver</Filter>
+    </ClCompile>
+    <ClCompile Include="Src\Game\Menu\Menu.cpp">
+      <Filter>Game\Menu</Filter>
+    </ClCompile>
+    <ClCompile Include="Src\Game\Item\Zenmai\Zenmai.cpp">
+      <Filter>Game\Object\Item\Zenmai</Filter>
+    </ClCompile>
+    <ClCompile Include="Src\Game\UI\GameUI\GameUI.cpp">
+      <Filter>Game\UI\GameUI</Filter>
+    </ClCompile>
+    <ClCompile Include="Src\Game\Gimmick\GimmickManager.cpp">
+      <Filter>Game\Object\Gimmick</Filter>
+    </ClCompile>
+    <ClCompile Include="Src\Game\Character\PlayerAnimation.cpp">
+      <Filter>Game\Anime</Filter>
+    </ClCompile>
+    <ClCompile Include="Src\Game\ObjectBase\Object3DBase.cpp">
+      <Filter>Game\Object</Filter>
+    </ClCompile>
+    <ClCompile Include="Src\Game\Item\ItemManager.cpp">
+      <Filter>Game\Object\Item</Filter>
+    </ClCompile>
+    <ClCompile Include="Src\Game\Character\CharacterManager.cpp">
+      <Filter>Game\Character</Filter>
+    </ClCompile>
+    <ClCompile Include="Src\Game\Character\CharacterBase.cpp">
+      <Filter>Game\Character\Player</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="Src\Game\Character\Player\Player.h">
+      <Filter>Game\Character\Player</Filter>
+    </ClInclude>
+    <ClInclude Include="Src\Game\Camera\CameraDebug.h">
+      <Filter>Game\Camera</Filter>
+    </ClInclude>
+    <ClInclude Include="Src\Game\Scene\SceneManager.h">
+      <Filter>Game\Scene</Filter>
+    </ClInclude>
+    <ClInclude Include="Src\Game\Input\Input.h">
+      <Filter>Game\Input</Filter>
+    </ClInclude>
+    <ClInclude Include="Src\Game\Scene\ScenePlay\ScenePlay.h">
+      <Filter>Game\Scene\ScenePlay</Filter>
+    </ClInclude>
+    <ClInclude Include="Src\Lib\Frame.h">
+      <Filter>Lib</Filter>
+    </ClInclude>
+    <ClInclude Include="Src\Game\Camera\CamaraManager.h">
+      <Filter>Game\Camera</Filter>
+    </ClInclude>
+    <ClInclude Include="Src\Game\Scene\SceneTitle\SceneTitle.h">
+      <Filter>Game\Scene\SceneTitle</Filter>
+    </ClInclude>
+    <ClInclude Include="Src\Game\Field\StageManager.h">
+      <Filter>Game\Stage</Filter>
+    </ClInclude>
+    <ClInclude Include="Src\Lib\Singleton.h">
+      <Filter>Lib</Filter>
+    </ClInclude>
+    <ClInclude Include="Src\Game\Exit\Exit.h">
+      <Filter>Game\Object\Exit</Filter>
+    </ClInclude>
+    <ClInclude Include="Src\Game\Gimmick\ObjectManager.h">
+      <Filter>Game\Object</Filter>
+    </ClInclude>
+    <ClInclude Include="Src\Game\Gimmick\Needle\Needle.h">
+      <Filter>Game\Object\Gimmick\Needle</Filter>
+    </ClInclude>
+    <ClInclude Include="Src\Game\Gimmick\Needle\NeedleManager.h">
+      <Filter>Game\Object\Gimmick\Needle</Filter>
+    </ClInclude>
+    <ClInclude Include="Src\Game\Scene\SceneClear\SceneClear.h">
+      <Filter>Game\Scene\SceneClear</Filter>
+    </ClInclude>
+    <ClInclude Include="Src\Lib\DrawText\DrawText.h">
+      <Filter>Lib\DrawText</Filter>
+    </ClInclude>
+    <ClInclude Include="Src\Game\Exit\ExitManager.h">
+      <Filter>Game\Object\Exit</Filter>
+    </ClInclude>
+    <ClInclude Include="Src\Game\Gimmick\Lift_2\Lift_switch\Lift_switch.h">
+      <Filter>Game\Object\Gimmick\Lift_2\Lift_Switch</Filter>
+    </ClInclude>
+    <ClInclude Include="Src\Game\Gimmick\Lift_2\Lift_2\Lift_2.h">
+      <Filter>Game\Object\Gimmick\Lift_2\Lift_2</Filter>
+    </ClInclude>
+    <ClInclude Include="Src\Game\Gimmick\Lift_2\Lift_2Manager.h">
+      <Filter>Game\Object\Gimmick\Lift_2</Filter>
+    </ClInclude>
+    <ClInclude Include="Src\Game\Gimmick\Lift_1\Lift_1\Lift_1.h">
+      <Filter>Game\Object\Gimmick\Lift_1\Lift_1</Filter>
+    </ClInclude>
+    <ClInclude Include="Src\Game\Gimmick\Lift_1\Lift_Lever\Lever.h">
+      <Filter>Game\Object\Gimmick\Lift_1\Lift_Lever</Filter>
+    </ClInclude>
+    <ClInclude Include="Src\Game\Gimmick\Lift_1\Lift_1Manager.h">
+      <Filter>Game\Object\Gimmick\Lift_1</Filter>
+    </ClInclude>
+    <ClInclude Include="Src\Game\Gimmick\Box_1\Box_1.h">
+      <Filter>Game\Object\Gimmick\Box_1</Filter>
+    </ClInclude>
+    <ClInclude Include="Src\Game\Gimmick\Box_1\Box_1Manager.h">
+      <Filter>Game\Object\Gimmick\Box_1</Filter>
+    </ClInclude>
+    <ClInclude Include="Src\Game\Item\Key\Key.h">
+      <Filter>Game\Object\Item\Key</Filter>
+    </ClInclude>
+    <ClInclude Include="Src\Game\Field\Field_1\Field_1.h">
+      <Filter>Game\Stage\Field_1</Filter>
+    </ClInclude>
+    <ClInclude Include="Src\Game\Field\Field_2\Field_2.h">
+      <Filter>Game\Stage\Field_2</Filter>
+    </ClInclude>
+    <ClInclude Include="Src\Game\Field\StageBase.h">
+      <Filter>Game\Stage</Filter>
+    </ClInclude>
+    <ClInclude Include="Src\Lib\math\Hit\Hit.h">
+      <Filter>Lib\math\Hit</Filter>
+    </ClInclude>
+    <ClInclude Include="Src\Game\Collision\CollisionManager.h">
+      <Filter>Game\Collision</Filter>
+    </ClInclude>
+    <ClInclude Include="Src\Game\UI\UI.h">
+      <Filter>Game\UI</Filter>
+    </ClInclude>
+    <ClInclude Include="Src\Game\UI\UIManager.h">
+      <Filter>Game\UI</Filter>
+    </ClInclude>
+    <ClInclude Include="Src\Game\Door\Door.h">
+      <Filter>Game\Object\Gimmick\Door</Filter>
+    </ClInclude>
+    <ClInclude Include="Src\Game\Door\DoorManager.h">
+      <Filter>Game\Object\Gimmick\Door</Filter>
+    </ClInclude>
+    <ClInclude Include="Src\Game\Character\Golem\Golem.h">
+      <Filter>Game\Character\Golem</Filter>
+    </ClInclude>
+    <ClInclude Include="Src\Lib\math\MyMath.h">
+      <Filter>Lib\math</Filter>
+    </ClInclude>
+    <ClInclude Include="Src\Game\Character\Enemy\Enemy.h">
+      <Filter>Game\Character\Enemy</Filter>
+    </ClInclude>
+    <ClInclude Include="Src\Game\Character\Enemy\EnemyManager.h">
+      <Filter>Game\Character\Enemy</Filter>
+    </ClInclude>
+    <ClInclude Include="Src\Game\Camera\CameraPlayer.h">
+      <Filter>Game\Camera\PlayerCamera</Filter>
+    </ClInclude>
+    <ClInclude Include="Src\Game\Camera\CameraGolem.h">
+      <Filter>Game\Camera\GolemCamera</Filter>
+    </ClInclude>
+    <ClInclude Include="Src\Game\Camera\CameraBase.h">
+      <Filter>Game\Camera</Filter>
+    </ClInclude>
+    <ClInclude Include="Src\Game\Scene\SceneBase.h">
+      <Filter>Game\Scene</Filter>
+    </ClInclude>
+    <ClInclude Include="Src\Game\UI\MapUI\MapUI.h">
+      <Filter>Game\UI\StageUI</Filter>
+    </ClInclude>
+    <ClInclude Include="Src\Game\Scene\SceneGameOver\SceneGameOver.h">
+      <Filter>Game\Scene\SceneGameOver</Filter>
+    </ClInclude>
+    <ClInclude Include="Src\Game\Gimmick\GimmickBase.h">
+      <Filter>Game\Object\Gimmick</Filter>
+    </ClInclude>
+    <ClInclude Include="Src\Game\Menu\Menu.h">
+      <Filter>Game\Menu</Filter>
+    </ClInclude>
+    <ClInclude Include="Src\Game\Common.h">
+      <Filter>Game</Filter>
+    </ClInclude>
+    <ClInclude Include="Src\Game\Item\Zenmai\Zenmai.h">
+      <Filter>Game\Object\Item\Zenmai</Filter>
+    </ClInclude>
+    <ClInclude Include="Src\Game\UI\GameUI\GameUI.h">
+      <Filter>Game\UI\GameUI</Filter>
+    </ClInclude>
+    <ClInclude Include="Src\Game\Gimmick\GimmickManager.h">
+      <Filter>Game\Object\Gimmick</Filter>
+    </ClInclude>
+    <ClInclude Include="Src\Game\Item\ItemBase.h">
+      <Filter>Game\Object\Item</Filter>
+    </ClInclude>
+    <ClInclude Include="Src\Game\Character\PlayerAnimation.h">
+      <Filter>Game\Anime</Filter>
+    </ClInclude>
+    <ClInclude Include="Src\Game\Character\CharacterBase.h">
+      <Filter>Game\Character</Filter>
+    </ClInclude>
+    <ClInclude Include="Src\Game\ObjectBase\Object3DBase.h">
+      <Filter>Game\Object</Filter>
+    </ClInclude>
+    <ClInclude Include="Src\Game\Item\ItemManager.h">
+      <Filter>Game\Object\Item</Filter>
+    </ClInclude>
+    <ClInclude Include="Src\Game\Item\ItemCommon.h">
+      <Filter>Game\Object\Item</Filter>
+    </ClInclude>
+    <ClInclude Include="Src\Game\Gimmick\GimmickCommon.h">
+      <Filter>Game\Object\Gimmick</Filter>
+    </ClInclude>
+    <ClInclude Include="Src\Game\Character\CharacterManager.h">
+      <Filter>Game\Character</Filter>
+    </ClInclude>
+    <ClInclude Include="Src\Game\Character\CharacterCommon.h">
+      <Filter>Game\Character</Filter>
+    </ClInclude>
+    <ClInclude Include="Src\Game\Character\Enemy\EnemyBase.h">
+      <Filter>Game\Character\Enemy</Filter>
+    </ClInclude>
+  </ItemGroup>
+</Project>
