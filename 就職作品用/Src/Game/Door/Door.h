@@ -29,7 +29,8 @@ public:
 	//終了処理
 	void Fin();
 
-	void PlayerHit();
+	void PlayerHit(CPlayer* player);
+
 	//扉が開く判定取得
 	void GetOpen(bool flg) { m_isOpen = flg; }
 	//扉が開く判定セット

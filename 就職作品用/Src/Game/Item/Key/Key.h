@@ -23,6 +23,8 @@ public:
 	//I—¹ˆ—
 	void Fin();
 
+	void PlayerHit(CPlayer *player);
+
 	//void HitPlayer(CPlayer* player);
 	//Œ®ƒtƒ‰ƒOæ“¾
 	bool GetIsGet() { return m_isGetFlg; }

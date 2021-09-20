@@ -29,6 +29,8 @@ public:
 	//終了処理
 	void Fin();
 
+	void PlayerHit();
+
 	//ハンドル取得
 	int GetHndl() { return m_iHndl; }
 	//レバーのフラグ取得

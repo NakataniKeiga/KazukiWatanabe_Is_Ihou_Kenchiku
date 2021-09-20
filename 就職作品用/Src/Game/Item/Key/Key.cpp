@@ -46,6 +46,14 @@ void CKey::Fin()
 	MV1DeleteModel(m_iHndl);
 }
 
+void CKey::PlayerHit(CPlayer* player)
+{
+	if (m_isAlive == false)
+	{
+		player->SetHave(true);
+	}
+}
+
 //void CKey::HitPlayer(CPlayer* player)
 //{
 //	if (CHit::IsHitSphereToSphere(player->GetPos(), player->GetRadius(), m_vPos, m_fRadius))

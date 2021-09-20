@@ -2,7 +2,6 @@
 #include"../ObjectBase/Object3DBase.h"
 #include"../Gimmick/GimmickCommon.h"
 #include"../Character/Player/Player.h"
-#include<vector>
 
 class CGimmickBase/*:public CObjectBase*/
 {
@@ -41,6 +40,8 @@ public:
 	//メンバ変数の取得
 	VECTOR GetPos() { return m_vPos; }  //現在の座標を返す
 	VECTOR GetRot() { return m_vRot; }//現在の回転角を返す
+	VECTOR GetCenter();
+
 	float GetRadius() { return m_fRadius; }//オブジェトの半径を返す
 
 	int GetHandle() { return m_iHndl; }
@@ -48,4 +49,8 @@ public:
 	taggimmick GetKind() { return m_kind; }
 
 	void SetKind(taggimmick kind) { m_kind = kind; }
+
+
+
+
 };

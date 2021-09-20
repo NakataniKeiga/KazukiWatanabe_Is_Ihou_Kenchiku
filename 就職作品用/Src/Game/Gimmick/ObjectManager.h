@@ -1,21 +1,19 @@
 #pragma once
 #include"GimmickManager.h"
 #include"../Item/ItemManager.h"
-#include"../Exit/ExitManager.h"
-#include"../Door/DoorManager.h"
-#include"../Item/Zenmai/Zenmai.h"
 #include"../../Lib/Singleton.h"
 
 
 class CObjectManager:public CSingleton<CObjectManager>
 {
+private:
 	friend CSingleton;
 private:
 
 	CGimmickManager* m_GimmickManager;
 	CItemManager* m_ItemManager;
 
-	CObjectManager() {};
+	CObjectManager();
 	~CObjectManager() {};
 public:
 	

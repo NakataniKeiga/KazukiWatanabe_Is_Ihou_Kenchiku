@@ -1,6 +1,4 @@
 #include"GimmickManager.h"
-#include"../Scene/SceneManager.h"
-#include"../Scene/ScenePlay/ScenePlay.h"
 #include"../Field/StageManager.h"
 
 #include"Box_1/Box_1.h"
@@ -72,13 +70,10 @@ void CGimmickManager::Update()
 //•`‰æˆ—
 void CGimmickManager::Draw()
 {
-	if (m_UseGimmick.size() != 0)
-	{
 		for (auto& gimmick : m_UseGimmick)
 		{
 			gimmick->Draw();
 		}
-	}
 }
 //I—¹ˆ—
 void CGimmickManager::Fin()
@@ -176,6 +171,8 @@ void CGimmickManager::Create(taggimmick kind, VECTOR pos)
 	{
 		CBox_1* box;
 		box = new CBox_1;
+
+		
 
 		box->SetPos(pos);
 		box->SetKind(kind);

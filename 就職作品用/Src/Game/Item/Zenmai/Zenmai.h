@@ -23,5 +23,5 @@ public:
 	//I—¹ˆ—
 	void Fin();
 
-
+	void PlayerHit(CPlayer* player);
 };

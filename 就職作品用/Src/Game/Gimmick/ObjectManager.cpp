@@ -4,15 +4,17 @@
 #include"../Collision/CollisionManager.h"
 
 
-
-//‰Šú‰»
-void CObjectManager::Init()
+CObjectManager::CObjectManager()
 {
 	m_GimmickManager = CGimmickManager::GetInstance();
 	m_ItemManager = CItemManager::GetInstance();
 
-	m_GimmickManager->Init();
-	m_ItemManager->Init();
+}
+
+//‰Šú‰»
+void CObjectManager::Init()
+{
+	
 
 
 	m_GimmickManager->Reqest(BOX_GIMMICK);
@@ -26,7 +28,8 @@ void CObjectManager::Init()
 	m_ItemManager->Reqest(KEY_ITEM);
 	m_ItemManager->Reqest(ZENMAI_ITEM);
 
-
+m_GimmickManager->Init();
+	m_ItemManager->Init();
 }
 //ƒ[ƒhˆ—
 void CObjectManager::Load()
@@ -51,6 +54,7 @@ void CObjectManager::Draw()
 	m_ItemManager->Draw();
 	
 }
+
 //I—¹ˆ—
 void CObjectManager::Fin()
 {

@@ -33,7 +33,6 @@ void CCharacterManager::Load()
 
 void CCharacterManager::Step()
 {
-	m_Player->IsChange(m_Golem);
 	m_Player->Step(m_Golem);
 	m_Golem->Step(m_Player);
 	m_Camera->Step(m_Player,m_Golem);

@@ -67,7 +67,9 @@ void CDoor::Fin()
 	MV1DeleteModel(m_iHndl);
 }
 
-void PlayerHit()
+void CDoor::PlayerHit(CPlayer* player)
 {
+
+
 
 }

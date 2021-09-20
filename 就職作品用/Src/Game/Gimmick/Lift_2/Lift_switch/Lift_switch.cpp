@@ -75,3 +75,10 @@ void CLift_Switch::Fin()
 {
 	MV1DeleteModel(m_iHndl);
 }
+
+void CLift_Switch::PlayerHit(CPlayer* player)
+{
+
+
+
+}

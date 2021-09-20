@@ -294,6 +294,9 @@
     <ClCompile Include="Src\Game\Character\CharacterBase.cpp">
       <Filter>Game\Character</Filter>
     </ClCompile>
+    <ClCompile Include="Src\Game\Gimmick\GimmickBase.cpp">
+      <Filter>Game\Object\Gimmick</Filter>
+    </ClCompile>
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="Src\Game\Character\Player\Player.h">

@@ -28,12 +28,16 @@ public:
 	void Init();
 	//ロード
 	void Load();
+
+	void Step();
 	//更新処理
 	void Update();
 	//描画処理
 	void Draw();
 	//後処理
 	void Fin();
+
+	void PlayerHit(CPlayer* player);
 
 	int  GetHndl() { return m_iHndl; }
 

@@ -177,6 +177,7 @@
     <ClCompile Include="Src\Game\Field\StageManager.cpp" />
     <ClCompile Include="Src\Game\Gimmick\Box_1\Box_1.cpp" />
     <ClCompile Include="Src\Game\Gimmick\Box_1\Box_1Mamager.cpp" />
+    <ClCompile Include="Src\Game\Gimmick\GimmickBase.cpp" />
     <ClCompile Include="Src\Game\Gimmick\GimmickManager.cpp" />
     <ClCompile Include="Src\Game\Gimmick\Lift_1\Lift_1Manager.cpp" />
     <ClCompile Include="Src\Game\Gimmick\Lift_1\Lift_1\Lift_1.cpp" />

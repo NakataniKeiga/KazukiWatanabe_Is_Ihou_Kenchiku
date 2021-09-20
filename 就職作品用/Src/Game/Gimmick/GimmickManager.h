@@ -25,6 +25,7 @@ private:
 	~CGimmickManager() {};
 
 public:
+
 	
 	//‰Šú‰»
 	void Init();
@@ -43,5 +44,5 @@ public:
 
 	void Create(taggimmick kind, VECTOR pos);
 
-	std::list<CGimmickBase*>GetUsePool() { return m_UseGimmick; }
+	std::list<CGimmickBase*>GetUsePool()const { return m_UseGimmick; }
 };

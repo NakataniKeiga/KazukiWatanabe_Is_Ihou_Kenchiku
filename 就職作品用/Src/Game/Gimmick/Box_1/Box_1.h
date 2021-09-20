@@ -3,8 +3,7 @@
 #include"../GimmickBase.h"
 #include"../../ObjectBase/Object3DBase.h"
 
-
-
+class CPlayer;
 
 class CBox_1:public CGimmickBase
 {
@@ -13,7 +12,6 @@ private:
 
 	//箱を持っている判定フラグ
 	bool m_isHave;
-
 	VECTOR m_vGravity;//オブジェクトの重力処理
 	float m_fGravity;//重力処理
 public:
@@ -29,15 +27,16 @@ public:
 	void Step();
 	//更新処理
 	void Update();
+
+	void Collision();
 	//描画処理
 	void Draw();
 	//後処理
 	void Fin();
 
-	void PlayerHit();
+	void PlayerHit(CPlayer* player);
 
 	void SetGravity(VECTOR garavity) { m_vGravity = garavity; }
-	void Setgravity(float gravity) { m_fGravity = gravity; }//重力セット
 
 	VECTOR GeteGravity() { return m_vGravity; }
 

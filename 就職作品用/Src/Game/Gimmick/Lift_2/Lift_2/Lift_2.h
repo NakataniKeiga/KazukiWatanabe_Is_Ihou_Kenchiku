@@ -30,6 +30,8 @@ public:
 	//Œãˆ—
 	void Fin();
 
+	void PlayerHit(CPlayer* player);
+
 	//Œ»İ‚ÌˆÚ“®—Ê‚ğ•Ô‚·
 	VECTOR GetMove() { return m_vMove; }
 	bool GetIsChange() { return m_isChange; }

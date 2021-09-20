@@ -9,10 +9,11 @@ static const char* WALL_PATH_S = { "Data/model/Wall/Wall.x" };
 
 void CLift_1::Init()
 {
+
 	m_kind = LIFT_1_GIMMICK;
 	memset(&m_vRot, 0, sizeof(VECTOR));
 	m_vMove = VGet(0.0f, 0.0f, 0.0f);
-	m_vScale = VGet(0.13f, 0.13f, 0.13f);
+	m_vScale = VGet(0.013f, 0.013f, 0.013f);
 	m_isChange = false;
 	Load();
 }
@@ -21,6 +22,12 @@ void CLift_1::Load()
 {
 	m_iHndl = MV1LoadModel(WALL_PATH_S);
 }         
+
+void CLift_1::Step()
+{
+
+
+}
 
 void CLift_1::Update()
 {
@@ -55,3 +62,9 @@ void CLift_1::Stage_2SetScale(int number)
 	m_vScale = scale[number];
 }
 
+void CLift_1::PlayerHit(CPlayer* player)
+{
+
+
+
+}

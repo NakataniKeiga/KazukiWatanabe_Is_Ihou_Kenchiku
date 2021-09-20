@@ -41,6 +41,8 @@ public:
 	//Œãˆ—
 	void Fin();
 
+	void PlayerHit(CPlayer* player);
+
 	bool GetIsChange() { return m_isChange; }
 
 	void SetIsChange(bool flg){m_isChange = flg; }

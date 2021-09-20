@@ -37,6 +37,8 @@ public:
 	//Œãˆ—
 	void Fin();
 
+	void PlayerHit(CPlayer* player);
+
 	int GetIsState() { return m_State; }
 	bool GetIsChange() { return IsChange; }
 

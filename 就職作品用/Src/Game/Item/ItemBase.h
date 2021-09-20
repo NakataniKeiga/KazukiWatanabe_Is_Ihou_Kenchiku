@@ -4,6 +4,8 @@
 #include"ItemCommon.h"
 
 
+class CPlayer;
+
 class CItemBase 
 {
 protected:
@@ -33,7 +35,7 @@ public:
 	//I—¹ˆ—
 	virtual void Fin() {};
 
-
+	virtual void PlayerHit(CPlayer* player) {};
 
 	//ƒƒ“ƒo•Ï”‚Ìİ’è
 	void SetPos(VECTOR pos) { m_vPos = pos; }//Œ»İ‚ÌÀ•W

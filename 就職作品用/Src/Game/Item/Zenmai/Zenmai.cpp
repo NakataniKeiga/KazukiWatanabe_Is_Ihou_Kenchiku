@@ -59,3 +59,12 @@ void CZenmai::Fin()
 {
 	MV1DeleteModel(m_iHndl);
 }
+
+void CZenmai::PlayerHit(CPlayer* player)
+{
+	if (m_isAlive == false)
+	{
+		player->SetZenmaiHave(true);
+	}
+
+}

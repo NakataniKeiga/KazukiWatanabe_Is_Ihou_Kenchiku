@@ -15,7 +15,7 @@ private:
 	CBox_1* m_Box;
 
 public:
-	CBox_1Manager() ;
+	CBox_1Manager();
 	~CBox_1Manager() {};
 
 	//‰Šú‰»
@@ -34,6 +34,5 @@ public:
 	CBox_1* GetBoxData() { return m_Box; }
 	//” ‚Ì”Ô†æ“¾
 	//int GetBoxNum(int num) { return BOX_NUM[num]; }
-
 
 };

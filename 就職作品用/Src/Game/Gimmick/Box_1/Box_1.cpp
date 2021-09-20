@@ -2,12 +2,13 @@
 #include"../../../Lib/math/Hit/Hit.h"
 #include"../../Input/Input.h"
 #include"../../Character/Player/Player.h"
+#include"../../Collision/CollisionManager.h"
 
 static const char* BOX_PATH_S = { "Data/model/Box/Box.x" };
 
 const VECTOR BOX_SCALE = { 0.01f, 0.01f, 0.01f };
 const float BOX_RADIUS = 1.5f;
-const float GRAVITY_SPEED = 0.00f;
+const float GRAVITY_SPEED = 0.01f;
 
 
 //‰Šú‰»
@@ -61,7 +62,9 @@ void CBox_1::Step()
 		{
 			m_vMove.z = 0.0f;
 			m_vMove.z = 0.0f;
-		}*/
+	}*/
+
+	
 
 }
 //
@@ -89,9 +92,44 @@ void CBox_1::Fin()
 	MV1DeleteModel(m_iHndl);
 }
 
-void CBox_1::PlayerHit()
+void CBox_1::Collision()
+{
+	CCollisionManager::CollCchekBoxToGimmick(this);
+}
+
+void CBox_1::PlayerHit(CPlayer* player)
 {
 
+	if (CInputKey::IsPuch(KEY_INPUT_SPACE))
+	{
+		if (CHit::IsHitSphereToSphere(player->GetHitPos(), player->GetRadius(), m_vPos, m_fRadius))
+		{
 
+			if (player->GetShove() == true)
+			{
+				m_isHave = false;
+				player->SetShove(false);
+			}
+			else if (player->GetShove() == false)
+			{
+				m_isHave = true;
+				player->SetShove(true);
+			}
+		}
+
+	}
+	if (m_isHave == true)
+	{
+		VECTOR PlayerHand = VAdd(player->GetHitPos(), VGet(0.0f, 2.0f, 0.0f));
+		m_vPos = VAdd(PlayerHand, m_vMove);
+	}
+	else
+	{
+		m_vMove.z = 0.0f;
+		m_vMove.z = 0.0f;
+	}
+	
+
+	
 
 }

@@ -65,6 +65,8 @@ public:
 	void SetIsAlive(bool isalive) { m_isAlive = isalive; }  
 
 	void SetGravity(VECTOR garavity) { m_vGravity = garavity; }
+
+	void SetfGravity(float gravity) { m_fGravity = gravity; }
 	VECTOR GeteGravity() { return m_vGravity; }
 
 	//âºëzä÷êî

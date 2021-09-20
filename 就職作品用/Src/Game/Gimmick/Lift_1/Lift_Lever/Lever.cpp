@@ -79,3 +79,10 @@ void CLever::Fin()
 {
 	MV1DeleteModel(m_iHndl);
 }
+
+void CLever::PlayerHit(CPlayer* player)
+{
+
+
+
+}

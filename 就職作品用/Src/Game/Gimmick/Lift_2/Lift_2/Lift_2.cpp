@@ -41,6 +41,13 @@ void CLift_2::Fin()
 	MV1DeleteModel(m_iHndl);
 }
 
+void CLift_2::PlayerHit(CPlayer* player)
+{
+
+
+
+}
+
 void CLift_2::Stage_1SetScale(int number)
 {
 	VECTOR scale[] = { LIFT_SCALE,VGet(0.09f,0.7f,0.07f) };

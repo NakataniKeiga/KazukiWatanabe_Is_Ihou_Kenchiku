@@ -29,7 +29,7 @@ void CGolem::Init()
 
 	VECTOR GolemuPos = Stage->GetManeBone(13, 0);
 	SetPos(GolemuPos);
-	m_isAlive =true;
+	m_isAlive =false;
 	m_isActivate = false;
 	if (Stage->GetStageNum() == 1)
 	{
