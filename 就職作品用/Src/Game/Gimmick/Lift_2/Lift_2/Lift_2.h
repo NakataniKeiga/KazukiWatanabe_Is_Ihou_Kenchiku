@@ -7,6 +7,9 @@ class CLift_2 :public CGimmickBase
 {
 private:
 
+
+	VECTOR m_vLift_2_Pos;
+	VECTOR m_vLift_2_MOVE;
 	VECTOR m_vMove;
 	bool m_isChange;
 	bool m_isMove;
@@ -31,6 +34,12 @@ public:
 	void Fin();
 
 	void PlayerHit(CPlayer* player);
+
+	void PlayerHitPosHit(CPlayer* player);
+
+	void GolemHit(CGolem* golem);
+
+	void GolemHitPosHit(CGolem* golem);
 
 	//åªç›ÇÃà⁄ìÆó Çï‘Ç∑
 	VECTOR GetMove() { return m_vMove; }

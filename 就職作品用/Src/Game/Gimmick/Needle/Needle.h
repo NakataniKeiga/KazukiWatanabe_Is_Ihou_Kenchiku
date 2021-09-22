@@ -29,7 +29,13 @@ public:
 	//I—¹ˆ—
 	void Fin();
 
-	void PlayerHit();
+	void PlayerHit(CPlayer* player);
+
+	void PlayerHitPosHit(CPlayer* player);
+
+	void GolemHit(CGolem* golem);
+
+	void GolemHitPosHit(CGolem* golem);
 
 	//ƒnƒ“ƒhƒ‹æ“¾
 	int GetHndl() { return m_iHndl; }

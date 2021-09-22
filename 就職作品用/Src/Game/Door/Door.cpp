@@ -73,3 +73,18 @@ void CDoor::PlayerHit(CPlayer* player)
 
 
 }
+
+void CDoor::PlayerHitPosHit(CPlayer* player)
+{
+
+}
+
+void CDoor::GolemHit(CGolem* golem)
+{
+
+}
+
+void CDoor::GolemHitPosHit(CGolem* golem)
+{
+
+}

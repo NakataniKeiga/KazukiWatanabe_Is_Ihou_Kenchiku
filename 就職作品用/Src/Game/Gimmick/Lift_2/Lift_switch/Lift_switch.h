@@ -15,8 +15,9 @@ private:
 		SWITCH_NUM
 	};
 
-	int m_State;
 
+
+	int m_State;
 	bool IsChange;
 
 public:
@@ -38,6 +39,12 @@ public:
 	void Fin();
 
 	void PlayerHit(CPlayer* player);
+
+	void PlayerHitPosHit(CPlayer* player);
+
+	void GolemHit(CGolem* golem);
+
+	void GolemHitPosHit(CGolem* golem);
 
 	int GetIsState() { return m_State; }
 	bool GetIsChange() { return IsChange; }

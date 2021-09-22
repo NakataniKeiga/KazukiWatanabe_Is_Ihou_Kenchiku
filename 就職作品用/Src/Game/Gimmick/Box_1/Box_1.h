@@ -36,6 +36,8 @@ public:
 
 	void PlayerHit(CPlayer* player);
 
+	void PlayerHitPosHit(CPlayer* player);
+
 	void SetGravity(VECTOR garavity) { m_vGravity = garavity; }
 
 	VECTOR GeteGravity() { return m_vGravity; }

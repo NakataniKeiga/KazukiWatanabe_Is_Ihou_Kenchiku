@@ -19,7 +19,10 @@ private:
 	std::list<CGimmickBase*>m_PoolGimmick;
 	std::list<CGimmickBase*>m_UseGimmick;
 
-	int m_Handle[GIMMICK_NUM];
+
+
+	int m_Lift_1_num;
+	int m_Lift_2_num;
 
 	CGimmickManager() {};
 	~CGimmickManager() {};
@@ -45,4 +48,8 @@ public:
 	void Create(taggimmick kind, VECTOR pos);
 
 	std::list<CGimmickBase*>GetUsePool()const { return m_UseGimmick; }
+
+	int GetLift_1_num() { return m_Lift_1_num; }
+
+	int GetLift_2_num() { return m_Lift_2_num; }
 };

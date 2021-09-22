@@ -8,7 +8,7 @@ static const char* BOX_PATH_S = { "Data/model/Box/Box.x" };
 
 const VECTOR BOX_SCALE = { 0.01f, 0.01f, 0.01f };
 const float BOX_RADIUS = 1.5f;
-const float GRAVITY_SPEED = 0.01f;
+const float GRAVITY_SPEED = 0.0f;
 
 
 //‰Šú‰»
@@ -100,6 +100,16 @@ void CBox_1::Collision()
 void CBox_1::PlayerHit(CPlayer* player)
 {
 
+	
+	
+
+	
+
+}
+
+void CBox_1::PlayerHitPosHit(CPlayer* player)
+{
+
 	if (CInputKey::IsPuch(KEY_INPUT_SPACE))
 	{
 		if (CHit::IsHitSphereToSphere(player->GetHitPos(), player->GetRadius(), m_vPos, m_fRadius))
@@ -128,8 +138,4 @@ void CBox_1::PlayerHit(CPlayer* player)
 		m_vMove.z = 0.0f;
 		m_vMove.z = 0.0f;
 	}
-	
-
-	
-
 }

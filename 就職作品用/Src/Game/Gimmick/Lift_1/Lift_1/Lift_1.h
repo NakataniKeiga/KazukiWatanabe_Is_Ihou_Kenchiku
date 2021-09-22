@@ -16,6 +16,8 @@ private:
 		TYPE_NUM//‘”
 	};
 
+	VECTOR m_vLiftPos;
+	VECTOR m_vLiftMovePos;
 	VECTOR m_vMove;
 	bool m_isChange;//•Â‚¶‚Ä‚¢‚é•Â‚¶‚Ä‚¢‚È‚¢‚©
 
@@ -38,6 +40,12 @@ public:
 	void Fin();
 
 	void PlayerHit(CPlayer* player);
+
+	void PlayerHitPosHit(CPlayer* player);
+
+	void GolemHit(CGolem* golem);
+
+	void GolemHitPosHit(CGolem* golem);
 
 	int  GetHndl() { return m_iHndl; }
 

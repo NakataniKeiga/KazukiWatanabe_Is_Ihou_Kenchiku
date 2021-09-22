@@ -32,6 +32,16 @@ void CGimmickManager::Init()
 	for (auto& gimmick : m_PoolGimmick)
 	{
 		gimmick->Init();
+
+		if (gimmick->GetKind() == LIFT_1_GIMMICK)
+		{
+			m_Lift_1_num++;
+		}
+		if (gimmick->GetKind() == LIFT_2_GIMMICK)
+		{
+			m_Lift_2_num++;
+		}
+
 	}
 }
 //ƒ‚ƒfƒ‹ƒ[ƒh

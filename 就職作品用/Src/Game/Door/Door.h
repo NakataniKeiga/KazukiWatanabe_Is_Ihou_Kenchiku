@@ -31,6 +31,12 @@ public:
 
 	void PlayerHit(CPlayer* player);
 
+	void PlayerHitPosHit(CPlayer* player);
+
+	void GolemHit(CGolem* golem);
+
+	void GolemHitPosHit(CGolem* golem);
+
 	//扉が開く判定取得
 	void GetOpen(bool flg) { m_isOpen = flg; }
 	//扉が開く判定セット

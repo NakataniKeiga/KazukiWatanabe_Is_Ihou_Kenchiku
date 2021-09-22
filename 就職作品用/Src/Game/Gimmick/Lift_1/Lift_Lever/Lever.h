@@ -18,9 +18,9 @@ private:
 	};
 	
 
+	VECTOR m_vLeverPos;
 	int m_iState;
 	//ƒŒƒo[À•W‚Ì”
-
 	bool m_isChange;
 
 public:
@@ -42,6 +42,12 @@ public:
 	void Fin();
 
 	void PlayerHit(CPlayer* player);
+
+	void PlayerHitPosHit(CPlayer* player);
+
+	void GolemHit(CGolem* golem);
+
+	void GolemHitPosHit(CGolem* golem);
 
 	bool GetIsChange() { return m_isChange; }
 

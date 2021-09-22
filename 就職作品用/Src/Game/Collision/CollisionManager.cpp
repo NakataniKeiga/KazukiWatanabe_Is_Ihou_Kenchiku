@@ -127,15 +127,9 @@ VECTOR CCollisionManager::CollCheckPlayerToGimmick(CPlayer* player)
 	{
 	
 		int GimmickHandle = gimmick->GetHandle();
-	
+
 			MV1_COLL_RESULT_POLY_DIM ret;//“–‚½‚è”»’èŒ‹‰ÊŠi”[\‘¢‘Ì
-			ret = MV1CollCheck_Sphere(GimmickHandle, -1, PlayerCenter, PlayerRadius);//“–‚½‚è”»’èŒ‹‰ÊŠi”[
-
-			if (gimmick->GetKind() == BOX_GIMMICK)
-			{
-				gimmick->PlayerHit(player);
-			}
-
+			ret = MV1CollCheck_Sphere(GimmickHandle, -1, PlayerCenter, PlayerRadius);//“–‚½‚è”»’èŒ‹‰ÊŠi
 			if (ret.HitNum != 0)
 			{
 
@@ -145,17 +139,17 @@ VECTOR CCollisionManager::CollCheckPlayerToGimmick(CPlayer* player)
 
 					if (ret.Dim[i].HitFlag == 1) {
 
-					
-						gimmick->PlayerHit(player);
-
+						
 						//	ƒqƒbƒg‚µ‚½ƒ|ƒŠƒSƒ“‚Æƒqƒbƒg‚µ‚½•¨‘Ì‚Ì‚ß‚è‚ñ‚¾‹——£‚ğ‹‚ß‚é
-						VECTOR temp = VSub(PlayerCenter, ret.Dim[i].HitPosition);
+ 						VECTOR temp = VSub(PlayerCenter, ret.Dim[i].HitPosition);
 						float length = VSize(temp);
 						//‰Ÿ‚µo‚·ŒvZˆ—
 						length = PlayerRadius - length;
 						// ‚ß‚è‚ñ‚¾‹——£•ª‚¾‚¯ŠO‚É‰Ÿ‚µo‚·@‰Ÿ‚µo‚·•ûŒü‚Í–@ü‚Ì•ûŒü
 						temp = VScale(ret.Dim[i].Normal, length);
 						vOut = VAdd(vOut, temp);
+
+						/*gimmick->PlayerHit(player);*/
 					}
 				}
 				// “–‚½‚è”»’èŒ‹‰Ê‚ğ”jŠü‚·‚é
@@ -166,6 +160,31 @@ VECTOR CCollisionManager::CollCheckPlayerToGimmick(CPlayer* player)
 	}
 	
 	return vOut;
+
+}
+
+void CCollisionManager::CollCheckPlayerHitPosToGimmick(CPlayer* player)
+{
+	VECTOR PlayerHitPos = player->GetHitPos();
+	float PlayerRadius = player->GetRadius();
+
+
+	CGimmickManager* gimmick = CGimmickManager::GetInstance();
+	std::list<CGimmickBase*>gimmick_pool = gimmick->GetUsePool();
+
+	VECTOR	vOut = { 0.0f, 0.0f, 0.0f };
+
+	for (auto gimmick : gimmick_pool)
+	{
+		VECTOR GimmickPos = gimmick->GetPos();
+		float GimmickRadius = gimmick->GetRadius();
+
+		if (CHit::IsHitSphereToSphere(PlayerHitPos, PlayerRadius, GimmickPos, GimmickRadius))
+		{
+			gimmick->PlayerHitPosHit(player);
+		}
+
+	}
 
 }
 
@@ -205,6 +224,8 @@ VECTOR CCollisionManager::CollCheckGolemToGimmick(CGolem* golem)
 					// ‚ß‚è‚ñ‚¾‹——£•ª‚¾‚¯ŠO‚É‰Ÿ‚µo‚·@‰Ÿ‚µo‚·•ûŒü‚Í–@ü‚Ì•ûŒü
 					temp = VScale(ret.Dim[i].Normal, length);
 					vOut = VAdd(vOut, temp);
+
+					gimmick->GolemHit(golem);
 				}
 			}
 			// “–‚½‚è”»’èŒ‹‰Ê‚ğ”jŠü‚·‚é
@@ -215,6 +236,28 @@ VECTOR CCollisionManager::CollCheckGolemToGimmick(CGolem* golem)
 	}
 
 	return vOut;
+}
+
+void CCollisionManager::CollCheckGolemToHitPosGimmick(CGolem* golem)
+{
+	VECTOR GolemCenter = golem->GetCeneter();
+	float GolemRadius = golem->GetRadius();
+
+	CGimmickManager* gimmick = CGimmickManager::GetInstance();
+	std::list<CGimmickBase*>gimmick_pool = gimmick->GetUsePool();
+
+	VECTOR	vOut = { 0.0f, 0.0f, 0.0f };
+
+	for (auto gimmick : gimmick_pool)
+	{
+		VECTOR GimmickPos = gimmick->GetPos();
+		float GimmickRadius = gimmick->GetRadius();
+
+		if (CHit::IsHitSphereToSphere(GolemCenter, GolemRadius, GimmickPos, GimmickRadius))
+		{
+			gimmick->GolemHitPosHit(golem);
+		}
+	}
 }
 
 VECTOR CCollisionManager::CollCchekBoxToGimmick(CBox_1* box)
@@ -279,9 +322,44 @@ VECTOR CCollisionManager::CollCheckGimmicekToStage()
 
 	int Stage_handle = Stage->GetHandle();
 
+	CGimmickManager* gimmick = CGimmickManager::GetInstance();
+
+	std::list<CGimmickBase*> gimmick_pool = gimmick->GetUsePool();
+
+	VECTOR	vOut = { 0.0f, 0.0f, 0.0f };
+
+	for (auto& gimmick : gimmick_pool)
+	{
+
+		VECTOR GimmickCenter = gimmick->GetCenter();
+		float GimmickRadius = gimmick->GetRadius();
 
 
+		MV1_COLL_RESULT_POLY_DIM ret;//“–‚½‚è”»’èŒ‹‰ÊŠi”[\‘¢‘Ì
+		ret = MV1CollCheck_Sphere(Stage_handle, -1, GimmickCenter, GimmickRadius);//“–‚½‚è”»’èŒ‹‰ÊŠi”[
+
+		if (ret.HitNum != 0)
+		{
+			// “–‚½‚Á‚½ƒ|ƒŠƒSƒ“‚Ì”‚¾‚¯ŒJ•Ô‚·
+			for (int i = 0; i < ret.HitNum; i++) {
+
+				if (ret.Dim[i].HitFlag == 1) {
+					//	ƒqƒbƒg‚µ‚½ƒ|ƒŠƒSƒ“‚Æƒqƒbƒg‚µ‚½•¨‘Ì‚Ì‚ß‚è‚ñ‚¾‹——£‚ğ‹‚ß‚é
+					VECTOR temp = VSub(GimmickCenter, ret.Dim[i].HitPosition);
+					float length = VSize(temp);
+					//‰Ÿ‚µo‚·ŒvZˆ—
+					length = GimmickRadius - length;
+					// ‚ß‚è‚ñ‚¾‹——£•ª‚¾‚¯ŠO‚É‰Ÿ‚µo‚·@‰Ÿ‚µo‚·•ûŒü‚Í–@ü‚Ì•ûŒü
+					temp = VScale(ret.Dim[i].Normal, length);
+					vOut = VAdd(vOut, temp);
+				}
+			}
+			// “–‚½‚è”»’èŒ‹‰Ê‚ğ”jŠü‚·‚é
+			MV1CollResultPolyDimTerminate(ret);
+		}
 
 
+	}
+	return vOut;
 
 }

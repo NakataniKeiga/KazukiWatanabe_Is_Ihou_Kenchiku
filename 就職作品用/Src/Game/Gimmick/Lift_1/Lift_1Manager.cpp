@@ -239,7 +239,7 @@
 //
 //				////–Ú“I’n
 //				dir = VGet(0.0f, 0.0f, 0.0f);
-//			/*	wallPos =VAdd(wallPos,dir);*/
+			/*	wallPos =VAdd(wallPos,dir);*/
 //				m_Lift_1_vec[lift_root]->SetMove(dir);
 //			}
 //			else

@@ -119,3 +119,24 @@ VECTOR CNeedle::GetCeneter()
 	vCenter.y += 1.0f;
 	return vCenter;
 }
+
+void CNeedle::PlayerHit(CPlayer* player)
+{
+
+
+}
+
+void CNeedle::PlayerHitPosHit(CPlayer* player)
+{
+
+}
+
+void CNeedle::GolemHit(CGolem* golem)
+{
+
+}
+
+void CNeedle::GolemHitPosHit(CGolem* golem)
+{
+
+}

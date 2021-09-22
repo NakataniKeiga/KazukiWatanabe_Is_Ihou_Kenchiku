@@ -14,7 +14,7 @@ static const int STAGE_MAX_NUM = 2;
 CStageManager::CStageManager()
 {
 	m_StageData = nullptr;
-	m_StageNum = 0;
+	m_StageNum = 1;
 	m_Clearflag = false;
 	Init();
 }

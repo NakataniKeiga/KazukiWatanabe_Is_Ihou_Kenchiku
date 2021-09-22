@@ -17,6 +17,7 @@ void CLift_Switch::Init()
 	m_fRadius = SWITCH_RADIUS;
 	m_vScale = SWITCH_SCALE;
 	m_State = SWITCH_OFF;
+	IsChange = false;
 	Load();
 }
 //ƒ[ƒhˆ—
@@ -78,7 +79,29 @@ void CLift_Switch::Fin()
 
 void CLift_Switch::PlayerHit(CPlayer* player)
 {
+	if(CHit::IsHitSphereToSphere(player->GetCeneter(),player->GetRadius(),m_vPos,m_fRadius))
+	{
+		player->SetSwitch(true);
+	}
+	else
+	{
+		player->SetSwitch(false);
+	}
+	
 
+}
 
+void CLift_Switch::PlayerHitPosHit(CPlayer* player)
+{
+
+}
+
+void CLift_Switch::GolemHit(CGolem* golem)
+{
+
+}
+
+void CLift_Switch::GolemHitPosHit(CGolem* golem)
+{
 
 }

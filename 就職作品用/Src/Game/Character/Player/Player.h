@@ -38,6 +38,7 @@ private:
 	bool m_isKeyHave_Flg;	//鍵を取得判定フラグ
 	bool m_isShove_Flg;		//箱を押した時の判定フラグ
 	bool m_isLever_Flg;		//レバーを押した時のフラグ
+	bool m_isSwitch_Flg;
 	bool m_isZenmaiHave_Flg;//ぜんまいばね取得判定フラグ
 	//ノックバック用
 	VECTOR m_vSpeed;
@@ -104,6 +105,8 @@ public:
 	bool GetShove() { return m_isShove_Flg; }
 	//レバーを押した判定フラグ取得
 	bool GetLever() { return m_isLever_Flg; }
+	//スイッチを押した判定フラグ取得
+	bool GetSwitch() { return m_isSwitch_Flg; }
 	//ぜんまいばねフラグ取得
 	bool GetZenmaiHave() { return m_isZenmaiHave_Flg; }
 //セットフラグ//
@@ -115,6 +118,8 @@ public:
 	void SetShove(bool shove) { m_isShove_Flg = shove; }
 	//レバーを押した判定セット
 	void SetLever(bool leverflg) { m_isLever_Flg = leverflg; }
+	//スイッチを押した判定セット
+	void SetSwitch(bool leverflg) { m_isSwitch_Flg = leverflg; }
 	////ぜんまいばね取得判定セット
 	void SetZenmaiHave(bool zenmaihave) { m_isZenmaiHave_Flg = zenmaihave; }
 };

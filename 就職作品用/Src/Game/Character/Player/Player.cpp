@@ -167,6 +167,7 @@ void CPlayer::Collision()
 {
 	ReflecCollision(CCollisionManager::CollCheckPlayerToStage(this));
 	ReflecCollision(CCollisionManager::CollCheckPlayerToGimmick(this));
+	CCollisionManager::CollCheckPlayerHitPosToGimmick(this);
 	CCollisionManager::CollCheckPlayerToItem(this);
 
 

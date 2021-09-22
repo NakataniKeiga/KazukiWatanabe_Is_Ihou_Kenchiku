@@ -112,6 +112,8 @@ void CGolem::Collision()
 {
 	ReflecCollision(CCollisionManager::CollCheckGolemToStage(this));
 	ReflecCollision(CCollisionManager::CollCheckGolemToGimmick(this));
+	CCollisionManager::CollCheckGolemToGimmick(this);
+	CCollisionManager::CollCheckGolemToHitPosGimmick(this);
 }
 
 void CGolem::Start()

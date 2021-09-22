@@ -389,9 +389,6 @@
     <ClInclude Include="Src\Lib\math\Hit\Hit.h">
       <Filter>Lib\math\Hit</Filter>
     </ClInclude>
-    <ClInclude Include="Src\Game\Collision\CollisionManager.h">
-      <Filter>Game\Collision</Filter>
-    </ClInclude>
     <ClInclude Include="Src\Game\UI\UI.h">
       <Filter>Game\UI</Filter>
     </ClInclude>
@@ -481,6 +478,9 @@
     </ClInclude>
     <ClInclude Include="Src\Game\Character\Enemy\EnemyBase.h">
       <Filter>Game\Character\Enemy</Filter>
+    </ClInclude>
+    <ClInclude Include="Src\Game\Collision\CollisionManager.h">
+      <Filter>Game\Collision</Filter>
     </ClInclude>
   </ItemGroup>
 </Project>

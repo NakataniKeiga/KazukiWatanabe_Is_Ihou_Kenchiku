@@ -2,6 +2,7 @@
 #include"../ObjectBase/Object3DBase.h"
 #include"../Gimmick/GimmickCommon.h"
 #include"../Character/Player/Player.h"
+#include"../Character/Golem/Golem.h"
 
 class CGimmickBase/*:public CObjectBase*/
 {
@@ -31,6 +32,12 @@ public:
 	virtual void Fin() {};
 
 	virtual void PlayerHit(CPlayer* player) {};
+
+	virtual void PlayerHitPosHit(CPlayer* player) {};
+
+	virtual void GolemHit(CGolem* golem) {};
+
+	virtual void GolemHitPosHit(CGolem* golem) {};
 
 	void SetPos(VECTOR pos) { m_vPos = pos; }
 	void SetRot(VECTOR rot) { m_vRot = rot; }

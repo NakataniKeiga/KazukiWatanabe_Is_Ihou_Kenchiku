@@ -34,6 +34,7 @@ private:
 
 	VECTOR m_vCamRot;
 	VECTOR m_vBackPos;
+	bool m_isLever_Flg;
 	bool m_isChase;		//追いかけていく判定フラグ
 	
 	//起動
@@ -73,5 +74,8 @@ public:
 	//移動更新
 	void CalcSpeed(VECTOR speed);
 
+	//レバーを押した判定フラグ取得
+	bool GetLever() { return m_isLever_Flg; }
 	
+	void SetLever(bool leverflg) { m_isLever_Flg = leverflg; }
 };
